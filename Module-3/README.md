@@ -1,3 +1,1 @@
-# EL Passion - RxSwift Workshops
-
-## Module 3
+# EL Passion - RxSwift Workshops - Module 3

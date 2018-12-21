@@ -1,8 +1,6 @@
-# EL Passion - RxSwift Workshops
+# EL Passion - RxSwift Workshops - Module 1
 
-## Module 1
-
-### Before you start
+## Before you start
 
 1. Run `setup.sh`
 2. Open `RxSwift-Workshops-Module-1.xcodeproj`
