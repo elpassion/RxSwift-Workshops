@@ -30,7 +30,7 @@ let resultObservable1: Observable<(String, String)> = .empty()
 
 // TODO:
 resultObservable1
-    .map { (password, confirmPassword) in isPairValid(password, confirmPassword) }
+    .map { _ in false }
     .test(using: resultObserver)
     .subscribe()
 
@@ -88,5 +88,5 @@ let resultObservable2: Observable<(String, String)> = .empty()
 
 // TODO:
 resultObservable2
-    .map { (password, confirmPassword) in isPairValid(password, confirmPassword) }
+    .map { _ in false }
     .bind(to: resultView.rx.isValid)
