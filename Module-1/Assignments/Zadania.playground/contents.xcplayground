@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' display-mode='raw' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Testy'/>
+        <page name='Zadanie_1'/>
+        <page name='Zadanie_2'/>
+        <page name='Zadanie_3'/>
+        <page name='Zadanie_4'/>
+        <page name='Zadanie_5'/>
+        <page name='Zadanie_6'/>
+        <page name='Zadanie_7'/>
+        <page name='Dodatek_1'/>
+        <page name='Dodatek_2'/>
+    </pages>
+</playground>
