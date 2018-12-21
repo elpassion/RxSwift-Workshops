@@ -1,11 +1,8 @@
-import AppKit
-import PlaygroundSupport
-import RxSwift
-import RxCocoa
+# Dodatek 2 (5min)
+### Walidacja sprawdzająca identyczność stringów wpisanych w pola i gwarantująca minimalną ilość wpisanych znaków
+### Zastosowanie: zmiana hasła
 
-// Dodatek 2 (5min)
-// Walidacja sprawdzająca identyczność stringów wpisanych w pola i gwarantująca minimalną ilość wpisanych znaków
-// Zastosowanie: zmiana hasła
+```swift
 
 let minRequiredLength = 3
 
@@ -26,10 +23,8 @@ let resultObserver = TestObserver<Bool>()
 let passwordSubject = PublishSubject<String>()
 let confirmPasswordSubject = PublishSubject<String>()
 
-let resultObservable1: Observable<(String, String)> = .empty()
-
-// TODO:
-resultObservable1
+Observable.combineLatest(passwordSubject.asObservable(),
+                         confirmPasswordSubject.asObservable())
     .map { (password, confirmPassword) in isPairValid(password, confirmPassword) }
     .test(using: resultObserver)
     .subscribe()
@@ -84,9 +79,9 @@ extension Reactive where Base == NSTextView {
     }
 }
 
-let resultObservable2: Observable<(String, String)> = .empty()
-
-// TODO:
-resultObservable2
+Observable.combineLatest(nameTextView.rx.string,
+                         repeatNameTextView.rx.string)
     .map { (password, confirmPassword) in isPairValid(password, confirmPassword) }
     .bind(to: resultView.rx.isValid)
+
+```
