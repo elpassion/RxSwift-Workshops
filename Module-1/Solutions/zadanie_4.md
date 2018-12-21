@@ -17,7 +17,7 @@ let words = PublishSubject<String>()
 let expectedResult = "Ala ma kota."
 let resultObserver = TestObserver<String>()
 
-words
+Observable.of("ala", "ma", "kota")
     .reduce([String]()) { $0 + [$1] }
     .map { words in
         words
@@ -27,11 +27,6 @@ words
     }
     .test(using: resultObserver)
     .subscribe()
-
-words.onNext("ala")
-words.onNext("ma")
-words.onNext("kota")
-words.onCompleted()
 
 resultObserver.assert(valuesEqualTo: ["Ala ma kota."])
 

@@ -19,7 +19,5 @@ publishSubject.onNext(3)
 publishSubject.onNext(4)
 publishSubject.onNext(5)
 publishSubject.onError("Some error")
-publishSubject.onNext(10)
-publishSubject.onNext(11)
 
 resultObserver.assert(valuesEqualTo: [1, 2, 3, 4, 5, -1])
