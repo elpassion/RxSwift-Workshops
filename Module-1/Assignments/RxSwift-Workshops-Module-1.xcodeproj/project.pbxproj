@@ -1,0 +1,136 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		310FFD9821B95A7F0010378B /* Playground */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 310FFD9921B95A7F0010378B /* Build configuration list for PBXAggregateTarget "Playground" */;
+			buildPhases = (
+				310FFD9C21B95A900010378B /* Copy Frameworks */,
+			);
+			dependencies = (
+			);
+			name = Playground;
+			productName = Playground;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		310FFD9721B956080010378B /* Zadania.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Zadania.playground; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		310FFD9021B955AD0010378B = {
+			isa = PBXGroup;
+			children = (
+				310FFD9721B956080010378B /* Zadania.playground */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		310FFD9121B955AD0010378B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					310FFD9821B95A7F0010378B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 310FFD9421B955AD0010378B /* Build configuration list for PBXProject "RxSwift-Workshops-Module-1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 310FFD9021B955AD0010378B;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				310FFD9821B95A7F0010378B /* Playground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		310FFD9C21B95A900010378B /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nCARTHAGE_DIR=${SRCROOT}/Carthage/Build/Mac\nDEBUG_DIR=${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\nditto \"$CARTHAGE_DIR\" \"$DEBUG_DIR\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		310FFD9521B955AD0010378B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		310FFD9621B955AD0010378B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		310FFD9A21B95A7F0010378B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		310FFD9B21B95A7F0010378B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		310FFD9421B955AD0010378B /* Build configuration list for PBXProject "RxSwift-Workshops-Module-1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310FFD9521B955AD0010378B /* Debug */,
+				310FFD9621B955AD0010378B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		310FFD9921B95A7F0010378B /* Build configuration list for PBXAggregateTarget "Playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310FFD9A21B95A7F0010378B /* Debug */,
+				310FFD9B21B95A7F0010378B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 310FFD9121B955AD0010378B /* Project object */;
+}
