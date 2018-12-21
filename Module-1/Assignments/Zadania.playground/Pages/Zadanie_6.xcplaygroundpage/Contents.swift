@@ -10,7 +10,6 @@ let resultObserver = TestObserver<[Int]>()
 let resultObservable: Observable<[Int]> = .empty()
 
 resultObservable
-    // TODO:
     .test(using: resultObserver)
     .subscribe()
 

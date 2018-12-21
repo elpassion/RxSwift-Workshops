@@ -9,7 +9,7 @@ let resultObserver = TestObserver<Int>()
 let publishSubject = PublishSubject<Int>()
 
 publishSubject.asObservable()
-    // Twój kod
+    // TODO:
     .test(using: resultObserver)
     .subscribe()
 
