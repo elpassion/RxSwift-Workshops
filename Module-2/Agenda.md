@@ -1,0 +1,30 @@
+## Agenda
+- Setup projektu
+  - klonowanie repo
+  - instalacja gemów
+  - instalacja podów
+  - budowa aplikacji na symulatorze
+- Prezentacja
+  - bind(to: ), subscribe(onNext: ())
+  - error handling
+  - Driver vs Observable
+    - drive(onNext())
+  - powiedzieć o Reactive extensions do komponetów UI
+    - UILabel: rx.text
+    - UITextField: rx.text
+    - UIButton: rx.tap
+    - UIImageView: rx.image
+    - UISegmentedControl: rx.selectedSegmentIndex
+    - UITableView: rx.items, rx.itemSelected, rx.modelSelected
+    - UICollectionView
+- Wstęp do zadania
+  - opowiedzenie o aplikacji z punktu widzenia użytkownika.
+  - co chcemy osiągnąć
+- Zadania
+  - obsłużyc prosty binding dla segmented control
+    - wypisz wybrany segment
+    - aktualizacja table view na podstawie wybranego segmentu, filtru
+    - ewentualny refactor (zrobić mapem, bind to?)
+  - usunięcie UITableViewDataSource
+    - na początku bez filtra
+    - dodać obsługę filtra

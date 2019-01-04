@@ -1,1 +1,7 @@
-# EL Passion - RxSwift Workshops - Module 2
+### Setup
+
+To bootstrap project use following command:
+
+```sh
+$ ./setup.sh
+```
