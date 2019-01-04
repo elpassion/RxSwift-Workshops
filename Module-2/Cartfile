@@ -1,0 +1,4 @@
+github "ReactiveX/RxSwift" ~> 4.4
+github "daltoniam/Starscream" ~> 3.0
+github "SVProgressHUD/SVProgressHUD" ~> 2.2
+github "RxSwiftCommunity/RxSwiftUtilities" ~> 2.1
