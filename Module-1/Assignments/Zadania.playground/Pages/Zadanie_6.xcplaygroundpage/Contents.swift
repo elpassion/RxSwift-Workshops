@@ -6,24 +6,9 @@ import RxSwift
 let subject = PublishSubject<Int>()
 let resultObserver = TestObserver<[Int]>()
 
-// TODO:
-let resultObservable: Observable<[Int]> = .empty()
-
-resultObservable
+Observable.of(1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9)
+    // TODO:
     .test(using: resultObserver)
     .subscribe()
-
-subject.onNext(1)
-subject.onNext(2)
-subject.onNext(2)
-subject.onNext(3)
-subject.onNext(4)
-subject.onNext(5)
-subject.onNext(5)
-subject.onNext(6)
-subject.onNext(7)
-subject.onNext(8)
-subject.onNext(9)
-subject.onNext(9)
 
 resultObserver.assert(valuesEqualTo: [[1, 2, 3, 4, 5, 6 ,7 ,8 ,9]])
