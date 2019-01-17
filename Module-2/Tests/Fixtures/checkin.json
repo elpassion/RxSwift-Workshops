@@ -1,0 +1,11 @@
+{
+  "id": 10,
+  "name": "EIP 666",
+  "departure_time": "2017-11-28T18:20:00Z",
+  "departs_from": "Warsaw Central Railway Station",
+  "arrives_to": "Sosnowiec Country Station",
+  "checkins": [
+    "Mateusz",
+    "Kuba"
+  ]
+}

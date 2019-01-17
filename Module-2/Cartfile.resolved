@@ -1,0 +1,7 @@
+github "AliSoftware/OHHTTPStubs" "6.1.0"
+github "Quick/Nimble" "v7.3.1"
+github "Quick/Quick" "v1.3.2"
+github "ReactiveX/RxSwift" "4.4.0"
+github "RxSwiftCommunity/RxSwiftUtilities" "2.1.0"
+github "SVProgressHUD/SVProgressHUD" "2.2.5"
+github "daltoniam/Starscream" "3.0.6"
