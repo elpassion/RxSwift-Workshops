@@ -83,7 +83,7 @@
 		3152400621F1E5FA0033B29E /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/Mac/RxAtomic.framework; sourceTree = "<group>"; };
 		3152400721F1E5FA0033B29E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
 		3152400821F1E5FA0033B29E /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/Mac/RxTest.framework; sourceTree = "<group>"; };
-		4E31CAD121EE28F800782986 /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E31CAD121EE28F800782986 /* Workshops-Module1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workshops-Module1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E31CAD321EE28F800782986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E31CAD521EE28F800782986 /* ExtraExercise2_PasswordValidationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraExercise2_PasswordValidationController.swift; sourceTree = "<group>"; };
 		4E31CAD721EE28F900782986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		4E31CADC21EE28FA00782986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E31CAEF21EE2C9C00782986 /* NSTextView+IsValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextView+IsValid.swift"; sourceTree = "<group>"; };
 		4E4DA9C821EF5801009133B1 /* ExtraExercise2_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraExercise2_Test.swift; sourceTree = "<group>"; };
-		8CC4A95821E4E7B100208B87 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC4A95821E4E7B100208B87 /* Workshops-Module1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workshops-Module1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC4A95D21E4E7B100208B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CC4A96121E4E7D100208B87 /* Exercise1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise1.swift; sourceTree = "<group>"; };
 		8CC4A96221E4E7D100208B87 /* Exercise6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise6.swift; sourceTree = "<group>"; };
@@ -138,20 +138,20 @@
 			isa = PBXGroup;
 			children = (
 				8CC4A95A21E4E7B100208B87 /* Exercises */,
-				4E31CAD221EE28F800782986 /* ExtraExercise2 */,
+				4E31CAD221EE28F800782986 /* Application */,
 				8CC4A95921E4E7B100208B87 /* Products */,
 				4E66DC2E21EF3ABF0076ED90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4E31CAD221EE28F800782986 /* ExtraExercise2 */ = {
+		4E31CAD221EE28F800782986 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				4E31CAFA21EE3B8800782986 /* Application */,
+				4E31CAD321EE28F800782986 /* AppDelegate.swift */,
 				4E31CAFB21EE3B9F00782986 /* Resources */,
 				4E31CAF921EE3B7900782986 /* Utilities */,
 			);
-			path = ExtraExercise2;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		4E31CAF921EE3B7900782986 /* Utilities */ = {
@@ -160,14 +160,6 @@
 				4E31CAEF21EE2C9C00782986 /* NSTextView+IsValid.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		4E31CAFA21EE3B8800782986 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				4E31CAD321EE28F800782986 /* AppDelegate.swift */,
-			);
-			path = Application;
 			sourceTree = "<group>";
 		};
 		4E31CAFB21EE3B9F00782986 /* Resources */ = {
@@ -195,8 +187,8 @@
 		8CC4A95921E4E7B100208B87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8CC4A95821E4E7B100208B87 /* UnitTests.xctest */,
-				4E31CAD121EE28F800782986 /* Application.app */,
+				8CC4A95821E4E7B100208B87 /* Workshops-Module1Tests.xctest */,
+				4E31CAD121EE28F800782986 /* Workshops-Module1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,9 +227,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E31CAD021EE28F800782986 /* Application */ = {
+		4E31CAD021EE28F800782986 /* Workshops-Module1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E31CAED21EE28FA00782986 /* Build configuration list for PBXNativeTarget "Application" */;
+			buildConfigurationList = 4E31CAED21EE28FA00782986 /* Build configuration list for PBXNativeTarget "Workshops-Module1" */;
 			buildPhases = (
 				4E31CACD21EE28F800782986 /* Sources */,
 				4E31CACE21EE28F800782986 /* Frameworks */,
@@ -248,14 +240,14 @@
 			);
 			dependencies = (
 			);
-			name = Application;
+			name = "Workshops-Module1";
 			productName = ExtraExercise2;
-			productReference = 4E31CAD121EE28F800782986 /* Application.app */;
+			productReference = 4E31CAD121EE28F800782986 /* Workshops-Module1.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8CC4A95721E4E7B100208B87 /* UnitTests */ = {
+		8CC4A95721E4E7B100208B87 /* Workshops-Module1Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CC4A96021E4E7B100208B87 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildConfigurationList = 8CC4A96021E4E7B100208B87 /* Build configuration list for PBXNativeTarget "Workshops-Module1Tests" */;
 			buildPhases = (
 				8CC4A95421E4E7B100208B87 /* Sources */,
 				8CC4A95521E4E7B100208B87 /* Frameworks */,
@@ -266,9 +258,9 @@
 			);
 			dependencies = (
 			);
-			name = UnitTests;
+			name = "Workshops-Module1Tests";
 			productName = Exercises;
-			productReference = 8CC4A95821E4E7B100208B87 /* UnitTests.xctest */;
+			productReference = 8CC4A95821E4E7B100208B87 /* Workshops-Module1Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -289,7 +281,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 310FFD9421B955AD0010378B /* Build configuration list for PBXProject "RxSwift-Workshops-Module-1" */;
+			buildConfigurationList = 310FFD9421B955AD0010378B /* Build configuration list for PBXProject "RxSwift-Workshops-Module1" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -302,8 +294,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E31CAD021EE28F800782986 /* Application */,
-				8CC4A95721E4E7B100208B87 /* UnitTests */,
+				4E31CAD021EE28F800782986 /* Workshops-Module1 */,
+				8CC4A95721E4E7B100208B87 /* Workshops-Module1Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -444,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ExtraExercise2/Resources/Info.plist;
+				INFOPLIST_FILE = Application/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -453,7 +445,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.ExtraExercise2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elpassion.Workshops-Module1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -514,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = ExtraExercise2/Resources/Info.plist;
+				INFOPLIST_FILE = Application/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -522,7 +514,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.ExtraExercise2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elpassion.Workshops-Module1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -676,7 +668,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		310FFD9421B955AD0010378B /* Build configuration list for PBXProject "RxSwift-Workshops-Module-1" */ = {
+		310FFD9421B955AD0010378B /* Build configuration list for PBXProject "RxSwift-Workshops-Module1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				310FFD9521B955AD0010378B /* Debug */,
@@ -685,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E31CAED21EE28FA00782986 /* Build configuration list for PBXNativeTarget "Application" */ = {
+		4E31CAED21EE28FA00782986 /* Build configuration list for PBXNativeTarget "Workshops-Module1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E31CAE921EE28FA00782986 /* Debug */,
@@ -694,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CC4A96021E4E7B100208B87 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+		8CC4A96021E4E7B100208B87 /* Build configuration list for PBXNativeTarget "Workshops-Module1Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CC4A95E21E4E7B100208B87 /* Debug */,
