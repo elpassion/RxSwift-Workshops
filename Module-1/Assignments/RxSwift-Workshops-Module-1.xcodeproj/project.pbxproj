@@ -79,7 +79,6 @@
 		4E31CAD721EE28F900782986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E31CADA21EE28F900782986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E31CADC21EE28FA00782986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E31CADD21EE28FA00782986 /* ExtraExercise2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtraExercise2.entitlements; sourceTree = "<group>"; };
 		4E31CAEF21EE2C9C00782986 /* NSTextView+IsValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextView+IsValid.swift"; sourceTree = "<group>"; };
 		4E4DA9C821EF5801009133B1 /* ExtraExercise2_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraExercise2_Test.swift; sourceTree = "<group>"; };
 		8CC4A95821E4E7B100208B87 /* Exercises.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Exercises.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +170,6 @@
 			children = (
 				4E31CAD921EE28F900782986 /* Main.storyboard */,
 				4E31CAD721EE28F900782986 /* Assets.xcassets */,
-				4E31CADD21EE28FA00782986 /* ExtraExercise2.entitlements */,
 				4E31CADC21EE28FA00782986 /* Info.plist */,
 			);
 			path = Resources;
@@ -412,12 +410,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = ExtraExercise2/Resources/ExtraExercise2.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -490,12 +486,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = ExtraExercise2/Resources/ExtraExercise2.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
