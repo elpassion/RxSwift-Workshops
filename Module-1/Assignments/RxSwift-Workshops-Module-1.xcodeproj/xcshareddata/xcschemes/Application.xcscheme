@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4E31CAD021EE28F800782986"
-               BuildableName = "ExtraExercise2.app"
-               BlueprintName = "ExtraExercise2"
+               BuildableName = "Application.app"
+               BlueprintName = "Application"
                ReferencedContainer = "container:RxSwift-Workshops-Module-1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,13 +28,23 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8CC4A95721E4E7B100208B87"
+               BuildableName = "UnitTests.xctest"
+               BlueprintName = "UnitTests"
+               ReferencedContainer = "container:RxSwift-Workshops-Module-1.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E31CAD021EE28F800782986"
-            BuildableName = "ExtraExercise2.app"
-            BlueprintName = "ExtraExercise2"
+            BuildableName = "Application.app"
+            BlueprintName = "Application"
             ReferencedContainer = "container:RxSwift-Workshops-Module-1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E31CAD021EE28F800782986"
-            BuildableName = "ExtraExercise2.app"
-            BlueprintName = "ExtraExercise2"
+            BuildableName = "Application.app"
+            BlueprintName = "Application"
             ReferencedContainer = "container:RxSwift-Workshops-Module-1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E31CAD021EE28F800782986"
-            BuildableName = "ExtraExercise2.app"
-            BlueprintName = "ExtraExercise2"
+            BuildableName = "Application.app"
+            BlueprintName = "Application"
             ReferencedContainer = "container:RxSwift-Workshops-Module-1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

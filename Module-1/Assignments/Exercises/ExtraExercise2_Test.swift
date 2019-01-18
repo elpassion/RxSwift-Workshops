@@ -9,7 +9,7 @@ import XCTest
 // znajdującej się w klasie PasswordValidationController. Napisz implementacje dla tej funkcji.
 
 // Podpowiedź:
-// Przed napisaniem implementacji uruchom aplikacje używając scheme `ExtraExercise2` i porównaj
+// Przed napisaniem implementacji uruchom aplikacje (⌘ + R) i porównaj
 // jej działanie po napisaniu poprawnej implementacji.
 
 class ExtraExercise2: XCTestCase {
