@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4E31CAD021EE28F800782986"
-               BuildableName = "ExtraExercise2.app"
-               BlueprintName = "ExtraExercise2"
-               ReferencedContainer = "container:RxSwift-Workshops-Module-1.xcodeproj">
+               BuildableName = "Workshops-Module1.app"
+               BlueprintName = "Workshops-Module1"
+               ReferencedContainer = "container:RxSwift-Workshops-Module1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,24 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8CC4A95721E4E7B100208B87"
+               BuildableName = "Workshops-Module1Tests.xctest"
+               BlueprintName = "Workshops-Module1Tests"
+               ReferencedContainer = "container:RxSwift-Workshops-Module1.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E31CAD021EE28F800782986"
-            BuildableName = "ExtraExercise2.app"
-            BlueprintName = "ExtraExercise2"
-            ReferencedContainer = "container:RxSwift-Workshops-Module-1.xcodeproj">
+            BuildableName = "Workshops-Module1.app"
+            BlueprintName = "Workshops-Module1"
+            ReferencedContainer = "container:RxSwift-Workshops-Module1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E31CAD021EE28F800782986"
-            BuildableName = "ExtraExercise2.app"
-            BlueprintName = "ExtraExercise2"
-            ReferencedContainer = "container:RxSwift-Workshops-Module-1.xcodeproj">
+            BuildableName = "Workshops-Module1.app"
+            BlueprintName = "Workshops-Module1"
+            ReferencedContainer = "container:RxSwift-Workshops-Module1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E31CAD021EE28F800782986"
-            BuildableName = "ExtraExercise2.app"
-            BlueprintName = "ExtraExercise2"
-            ReferencedContainer = "container:RxSwift-Workshops-Module-1.xcodeproj">
+            BuildableName = "Workshops-Module1.app"
+            BlueprintName = "Workshops-Module1"
+            ReferencedContainer = "container:RxSwift-Workshops-Module1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
