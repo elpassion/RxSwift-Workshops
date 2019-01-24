@@ -57,7 +57,10 @@ class TimetableViewControllerSpec_PullToRefreshSpec: QuickSpec {
                     }
 
                     it("should hide loading indicator") {
-                        expect(progressHUDSpy) == [true, false]
+                        expect(progressHUDSpy).to(satisfyAnyOf(
+                            equal([true, false]),
+                            equal([false, true, false])
+                        ))
                     }
 
                     it("should have refresh control set up") {
@@ -86,7 +89,10 @@ class TimetableViewControllerSpec_PullToRefreshSpec: QuickSpec {
                         }
 
                         it("should show & hide loading indicator again") {
-                            expect(progressHUDSpy) == [true, false, true, false]
+                            expect(progressHUDSpy).to(satisfyAnyOf(
+                                equal([true, false, true, false]),
+                                equal([false, true, false, true, false])
+                            ))
                         }
 
                         it("should end refreshing") {
