@@ -525,11 +525,14 @@ searchTextField.rx.text // Observable<String?>
 
 # [fit] Operatory w RxSwift
 
-^ Operatory w RxSwift są bardzo ważne ponieważ umożliwiają komponowanie strumieni ich przekształcanie
+^ Operatory w RxSwift są bardzo ważne ponieważ umożliwiają komponowanie strumieni i ich przekształcanie
+- bezpośrednio będą potrzebne do rozwiazania zadań
 
 ---
 
-# **Filter**
+# filter
+
+![right](movies/filter.mp4)
 
 ```swift
 Observable.of(1, 2, 3, 4, 5, 6)
@@ -538,23 +541,25 @@ Observable.of(1, 2, 3, 4, 5, 6)
 
 // 5
 // 6
-
 ```
+
 
 ^ Operator filtrowania pozwala na przefiltrowanie elementów, które spełniają konkretny warunek.
 
 ---
 
-# **Map** 
+# map
+
+![right](movies/map.mp4)
 
 ```swift
 Observable.of(1, 2, 3)
-  .map { "Twój szczęśliwy numerek to \($0)" }
+  .map { "Twój numer to: \($0)" }
   .subscribe(onNext: { print($0) })
   
-// Twój szczęśliwy numerek to 1
-// Twój szczęśliwy numerek to 2
-// Twój szczęśliwy numerek to 3
+// Twój numer to: 1
+// Twój numer to: 2
+// Twój numer to: 3
 
 ```
 
@@ -562,7 +567,9 @@ Observable.of(1, 2, 3)
 
 ---
 
-# **TakeWhile**
+# takeWhile
+
+![right](movies/takeWhile.mp4)
 
 ```swift
 Observable.of(1, 2, 3, 4, 3, 2, 1)
@@ -581,7 +588,9 @@ Observable.of(1, 2, 3, 4, 3, 2, 1)
 
 ---
 
-# **DistinctUntilChanged**
+## distinctUntilChanged
+
+![right](movies/distinctUntilChanged.mp4)
 
 ```swift
 Observable.of(1, 1, 1, 1, 2, 3, 3, 5, 1, 5)
@@ -601,7 +610,9 @@ Observable.of(1, 1, 1, 1, 2, 3, 3, 5, 1, 5)
 
 ---
 
-# **ToArray**
+# toArray
+
+![right](movies/toArray.mp4)
 
 ```swift
 Observable.of(1, 2, 3, 4, 5) // Observable<Int>
@@ -618,7 +629,9 @@ Observable.of(1, 2, 3, 4, 5) // Observable<Int>
 
 ---
 
-# **skip(\_: Int)**
+# skip
+
+![right](movies/skip.mp4)
 
 ```swift
 Observable.of("a", "b", "c", "d", "e")
@@ -633,7 +646,9 @@ Observable.of("a", "b", "c", "d", "e")
 
 ---
 
-# **reduce**
+# reduce
+
+![right](movies/reduce.mp4)
 
 ```swift
 Observable
@@ -653,7 +668,9 @@ Observable
 
 ---
 
-# **Merge**
+# merge
+
+![right](movies/merge.mp4)
 
 ```swift
 let first = PublishSubject<String>()
@@ -675,11 +692,14 @@ second.onNext("3️⃣")
 ```
 
 ^ Merge złącza wszystkie emisje ze strumieni wejściowych w jeden strumień.
+- strumienie tego samego typu
 
 ---
 
 
-# **CombineLatest**
+# combineLatest
+
+![right](movies/combineLatest.mp4)
 
 ```swift
 
@@ -703,7 +723,9 @@ second.onNext("6") // First: 5 Second: 6
 
 ---
 
-# **Zip**
+# zip
+
+![right](movies/zip.mp4)
 
 ```swift
 let first = PublishSubject<String>()
@@ -728,7 +750,9 @@ first.onNext("8")
 
 ---
 
-# **catchErrorJustReturn**
+## catchErrorJustReturn
+
+![right](movies/catchErrorJustReturn.mp4)
 
 ```swift
 let subject = PublishSubject<Int>()
@@ -749,7 +773,9 @@ subject.onError(NSError(domain: "", code: 0, userInfo: nil)) // 7
 
 ---
 
-# **catchError**
+# catchError
+
+![right](movies/catchError.mp4)
 
 ```swift
 let first = PublishSubject<Int>()
@@ -759,13 +785,11 @@ first
     .catchError({ _ -> Observable<Int> in
         return second
     })
-    .subscribe(onNext: { print($0) },
-               onCompleted: { print("Completed") })
+    .subscribe(onNext: { print($0) })
 
 first.onNext(1) // 1
 first.onNext(2) // 2
 first.onError(NSError(domain: "", code: 0, userInfo: nil))
-first.onNext(3)
 second.onNext(4) // 4
 second.onNext(5) // 5
 ```
@@ -773,19 +797,20 @@ second.onNext(5) // 5
 ^ Operator catchError mapuje Event typu Error na inny Observable
 
 ---
-# **do**
+# do
+
+![right](movies/do.mp4)
 
 ```swift
 Observable.of(1, 2, 3)
-    .do(onNext: { if $0 == 2 {
-            print("wykonaj dodatkową operację")
-        }
-    })
-    .subscribe(onNext: { print($0) })
+            .do(onNext: { print("🌴 + \($0)") })
+            .subscribe(onNext: { print($0) })
 
+// 🌴 + 1
 // 1
-// wykonaj dodatkową operację
+// 🌴 + 2
 // 2
+// 🌴 + 3
 // 3
 
 ```
@@ -793,7 +818,6 @@ Observable.of(1, 2, 3)
 ^ Opeator do jest dedykowanym operatorem do wykonywania operacji dodatkowych i nie wprowadza zmian do strumienia.
 
 ---
-
 # [fit] Zadania
 
 ---
