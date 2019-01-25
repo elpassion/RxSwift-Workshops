@@ -96,8 +96,8 @@ class TimetableViewControllerSpec: QuickSpec {
 
                     context("when tap on 3rd segment") {
                         beforeEach {
-                            sut.timetableView.filterView.segmentedControl.simulateTap(atIndex: 2)
                             serviceStub.stubbedTimetableEntries.onNext(TimetableEntry.testEntries)
+                            sut.timetableView.filterView.segmentedControl.simulateTap(atIndex: 2)
                         }
 
                         it("should apply the filter to items") {
