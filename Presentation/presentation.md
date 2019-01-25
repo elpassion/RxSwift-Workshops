@@ -1067,8 +1067,7 @@ class Cell: UITableViewCell {
 # Setup projektu
 
 1. Folder: Module-2.
-2. `./setup.sh`.
-3. Budowanie aplikacji na symulatorze.
+2. Budowanie aplikacji na symulatorze.
 
 ---
 
@@ -1084,7 +1083,7 @@ class Cell: UITableViewCell {
 
 Aplikacja jest napisana za pomocą natywnych interface’ów UIKit, czyli:
 
-* UISegmentedControl: `addTarget` (`TimetableViewController`),
+* UISegmentedControl: `addTarget(_:action:for:)` (`TimetableViewController`),
 * UITableView: `UITableViewDataSource` i `UITableViewDelegate` (`TimetableViewController`).
 
 ---
@@ -1095,7 +1094,7 @@ Aplikacja jest napisana za pomocą natywnych interface’ów UIKit, czyli:
 
 # Zadanie #1
 
-W klasie `TimetableViewController` zastąp użycie funkcji addTarget(_:action:for:) bindiginem rx'owym.
+W klasie `TimetableViewController` zastąp użycie funkcji `addTarget(_:action:for:)` bindiginem rx'owym.
 
 ---
 
