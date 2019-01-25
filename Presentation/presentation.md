@@ -43,7 +43,7 @@ https://github.com/elpassion/RxSwift-workshops
 2. Deklaratywne
   * funkcyjne
 
-^ Jedną z odmian programowania deklaratywnego jest programowanie funkcyjne (główne założenie - raz zdefiniowana funkcja zwraca zawsze te same dane wyjściowe dla konkretnych danych wejściowych).
+^ Jedną z odmian programowania deklaratywnego jest programowanie funkcyjne.
 
 ---
 
@@ -87,6 +87,20 @@ https://github.com/elpassion/RxSwift-workshops
 ![15%](images/pancakes.png)
 
 ^ Paradygmat w którym programista opisuje warunki, jakie musi spełniać końcowe rozwiązanie czyli co chcemy osiągnąć.
+
+---
+
+# [fit] Programowanie **funkcyjne**
+
+<br>
+
+```swift
+func sum(a: Int, b: Int) -> Int {
+  return a + b
+}
+```
+
+^ Głównym założeniem jest to, że raz zdefiniowana funkcja zwraca zawsze te same dane wyjściowe dla konkretnych parametrów wejściowych.
 
 ---
 
@@ -828,15 +842,6 @@ Observable.of(1, 2, 3)
 ---
 
 # [fit] RxSwift + UIKit => RxCocoa
-
----
-
-# 4 typy subjectów
-
-* PublishSubject
-* PublishRelay
-* BehaviorSubject
-* BehaviorRelay
 
 ---
 
