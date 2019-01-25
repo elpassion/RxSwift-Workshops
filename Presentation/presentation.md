@@ -1486,6 +1486,27 @@ apiClient
 
 ---
 
+# Wielokrotne subskrypcje
+
+```swift
+let nameLabel: UILabel = ...
+let surnameLabel: UILabel = ...
+
+let request: Observable<User> = ...
+
+request
+    .subscribe(onNext: { user in
+        nameLabel.text = user.firstName
+    })
+
+request
+    .subscribe(onNext: { user in
+        surnameLabel.text = user.lastName
+    })
+```
+
+---
+
 # Share replay
 
 ```swift
