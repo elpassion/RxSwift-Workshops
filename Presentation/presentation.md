@@ -1437,6 +1437,10 @@ button.rx.tap // ControlEvent<Void>
 
 ---
 
+![fit](movies/flat_map_intro.mov)
+
+---
+
 # flatMap - porównanie
 
 ```swift
