@@ -847,6 +847,11 @@ Observable.of(1, 2, 3)
 
 # 4 typy subjectów
 
+* PublishSubject
+* PublishRelay
+* BehaviorSubject
+* BehaviorRelay
+
 |  | Subject | Relay |
 | --- | --- | --- |
 | Publish | No state, errors | No state, no errors |
