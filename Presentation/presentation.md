@@ -532,7 +532,7 @@ searchTextField.rx.text // Observable<String?>
 
 # filter
 
-![right](movies/filter.mp4)
+![right fit](movies/filter.mp4)
 
 ```swift
 Observable.of(1, 2, 3, 4, 5, 6)
@@ -550,7 +550,7 @@ Observable.of(1, 2, 3, 4, 5, 6)
 
 # map
 
-![right](movies/map.mp4)
+![right fit](movies/map.mp4)
 
 ```swift
 Observable.of(1, 2, 3)
@@ -569,7 +569,7 @@ Observable.of(1, 2, 3)
 
 # takeWhile
 
-![right](movies/takeWhile.mp4)
+![right fit](movies/takeWhile.mp4)
 
 ```swift
 Observable.of(1, 2, 3, 4, 3, 2, 1)
@@ -590,7 +590,7 @@ Observable.of(1, 2, 3, 4, 3, 2, 1)
 
 ## distinctUntilChanged
 
-![right](movies/distinctUntilChanged.mp4)
+![right fit](movies/distinctUntilChanged.mp4)
 
 ```swift
 Observable.of(1, 1, 1, 1, 2, 3, 3, 5, 1, 5)
@@ -612,7 +612,7 @@ Observable.of(1, 1, 1, 1, 2, 3, 3, 5, 1, 5)
 
 # toArray
 
-![right](movies/toArray.mp4)
+![right fit](movies/toArray.mp4)
 
 ```swift
 Observable.of(1, 2, 3, 4, 5) // Observable<Int>
@@ -631,7 +631,7 @@ Observable.of(1, 2, 3, 4, 5) // Observable<Int>
 
 # skip
 
-![right](movies/skip.mp4)
+![right fit](movies/skip.mp4)
 
 ```swift
 Observable.of("a", "b", "c", "d", "e")
@@ -648,7 +648,7 @@ Observable.of("a", "b", "c", "d", "e")
 
 # reduce
 
-![right](movies/reduce.mp4)
+![right fit](movies/reduce.mp4)
 
 ```swift
 Observable
@@ -670,7 +670,7 @@ Observable
 
 # merge
 
-![right](movies/merge.mp4)
+![right fit](movies/merge.mp4)
 
 ```swift
 let first = PublishSubject<String>()
@@ -699,7 +699,7 @@ second.onNext("3️⃣")
 
 # combineLatest
 
-![right](movies/combineLatest.mp4)
+![right fit](movies/combineLatest.mp4)
 
 ```swift
 
@@ -725,7 +725,7 @@ second.onNext("6") // First: 5 Second: 6
 
 # zip
 
-![right](movies/zip.mp4)
+![right fit](movies/zip.mp4)
 
 ```swift
 let first = PublishSubject<String>()
@@ -752,7 +752,7 @@ first.onNext("8")
 
 ## catchErrorJustReturn
 
-![right](movies/catchErrorJustReturn.mp4)
+![right fit](movies/catchErrorJustReturn.mp4)
 
 ```swift
 let subject = PublishSubject<Int>()
@@ -775,7 +775,7 @@ subject.onError(NSError(domain: "", code: 0, userInfo: nil)) // 7
 
 # catchError
 
-![right](movies/catchError.mp4)
+![right fit](movies/catchError.mp4)
 
 ```swift
 let first = PublishSubject<Int>()
@@ -799,7 +799,7 @@ second.onNext(5) // 5
 ---
 # do
 
-![right](movies/do.mp4)
+![right fit](movies/do.mp4)
 
 ```swift
 Observable.of(1, 2, 3)
