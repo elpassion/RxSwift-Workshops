@@ -546,8 +546,6 @@ searchTextField.rx.text // Observable<String?>
 
 # filter
 
-![right fit](movies/filter.mp4)
-
 ```swift
 Observable.of(1, 2, 3, 4, 5, 6)
   .filter { $0 > 4 }
@@ -562,9 +560,11 @@ Observable.of(1, 2, 3, 4, 5, 6)
 
 ---
 
-# map
+![fit](movies/filter.mp4)
 
-![right fit](movies/map.mp4)
+---
+
+# map
 
 ```swift
 Observable.of(1, 2, 3)
@@ -581,9 +581,11 @@ Observable.of(1, 2, 3)
 
 ---
 
-# takeWhile
+![fit](movies/map.mp4)
 
-![right fit](movies/takeWhile.mp4)
+---
+
+# takeWhile
 
 ```swift
 Observable.of(1, 2, 3, 4, 3, 2, 1)
@@ -602,9 +604,11 @@ Observable.of(1, 2, 3, 4, 3, 2, 1)
 
 ---
 
-## distinctUntilChanged
+![fit](movies/takeWhile.mp4)
 
-![right fit](movies/distinctUntilChanged.mp4)
+---
+
+## distinctUntilChanged
 
 ```swift
 Observable.of(1, 1, 1, 1, 2, 3, 3, 5, 1, 5)
@@ -624,9 +628,11 @@ Observable.of(1, 1, 1, 1, 2, 3, 3, 5, 1, 5)
 
 ---
 
-# toArray
+![fit](movies/distinctUntilChanged.mp4)
 
-![right fit](movies/toArray.mp4)
+---
+
+# toArray
 
 ```swift
 Observable.of(1, 2, 3, 4, 5) // Observable<Int>
@@ -643,9 +649,11 @@ Observable.of(1, 2, 3, 4, 5) // Observable<Int>
 
 ---
 
-# skip
+![fit](movies/toArray.mp4)
 
-![right fit](movies/skip.mp4)
+---
+
+# skip
 
 ```swift
 Observable.of("a", "b", "c", "d", "e")
@@ -660,9 +668,11 @@ Observable.of("a", "b", "c", "d", "e")
 
 ---
 
-# reduce
+![fit](movies/skip.mp4)
 
-![right fit](movies/reduce.mp4)
+---
+
+# reduce
 
 ```swift
 Observable
@@ -682,27 +692,25 @@ Observable
 
 ---
 
-# merge
+![fit](movies/reduce.mp4)
 
-![right fit](movies/merge.mp4)
+---
+
+# merge
 
 ```swift
 let first = PublishSubject<String>()
 let second = PublishSubject<String>()
 
-Observable
-  .merge(first, second)
-  .subscribe(onNext: { print($0, terminator: " ") })
+Observable.merge(first, second)
+  .subscribe(onNext: { print($0) })
 
-first.onNext("🅰️")
-first.onNext("🅱️")
-second.onNext("1️⃣") 
-second.onNext("2️⃣")
-first.onNext("🆎")
-second.onNext("3️⃣")
-
-// 🅰️ 🅱️ 1️⃣ 2️⃣ 🆎 3️⃣
-
+first.onNext("🅰️")   // 🅰️
+first.onNext("🅱️")   // 🅱️
+second.onNext("1️⃣") // 1️⃣
+second.onNext("2️⃣") // 2️⃣
+first.onNext("🆎")   // 🆎
+second.onNext("3️⃣") // 3️⃣
 ```
 
 ^ Merge złącza wszystkie emisje ze strumieni wejściowych w jeden strumień.
@@ -710,10 +718,11 @@ second.onNext("3️⃣")
 
 ---
 
+![fit](movies/merge.mp4)
+
+---
 
 # combineLatest
-
-![right fit](movies/combineLatest.mp4)
 
 ```swift
 
@@ -737,9 +746,11 @@ second.onNext("6") // First: 5 Second: 6
 
 ---
 
-# zip
+![fit](movies/combineLatest.mp4)
 
-![right fit](movies/zip.mp4)
+---
+
+# zip
 
 ```swift
 let first = PublishSubject<String>()
@@ -757,16 +768,17 @@ first.onNext("4")
 first.onNext("5")
 second.onNext("6") // First: 2 Second: 6
 first.onNext("7")
-first.onNext("8")
 ```
 
 ^ Zip łączy kolejne emisje ze wszystkich strumieni wejściowych w krotki.
 
 ---
 
-## catchErrorJustReturn
+![fit](movies/zip.mp4)
 
-![right fit](movies/catchErrorJustReturn.mp4)
+---
+
+## catchErrorJustReturn
 
 ```swift
 let subject = PublishSubject<Int>()
@@ -787,9 +799,11 @@ subject.onError(NSError(domain: "", code: 0, userInfo: nil)) // 7
 
 ---
 
-# catchError
+![fit](movies/catchErrorJustReturn.mp4)
 
-![right fit](movies/catchError.mp4)
+---
+
+# catchError
 
 ```swift
 let first = PublishSubject<Int>()
@@ -811,9 +825,12 @@ second.onNext(5) // 5
 ^ Operator catchError mapuje Event typu Error na inny Observable
 
 ---
-# do
 
-![right fit](movies/do.mp4)
+![fit](movies/catchError.mp4)
+
+---
+
+# do
 
 ```swift
 Observable.of(1, 2, 3)
@@ -832,6 +849,11 @@ Observable.of(1, 2, 3)
 ^ Opeator do jest dedykowanym operatorem do wykonywania operacji dodatkowych i nie wprowadza zmian do strumienia.
 
 ---
+
+![fit](movies/do.mp4)
+
+---
+
 # [fit] Zadania
 
 ---
