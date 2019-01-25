@@ -1,7 +1,6 @@
-### Setup
+# EL Passion - RxSwift Workshops - Module 2
 
-To bootstrap project use following command:
+## Before you start
 
-```sh
-$ ./setup.sh
-```
+1. Open `Assignments/RxSwift-Workshops-Module-2.xcodeproj`
+2. Run `CMD + U` on `App` scheme selected
