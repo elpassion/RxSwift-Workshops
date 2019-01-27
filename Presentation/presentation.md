@@ -899,7 +899,7 @@ print(label.text) // "Hello"
 # Błędy
 
 ```swift
-let subject = PublishSubject<String>
+let subject = PublishSubject<String>()
 let label = UILabel(frame: .zero)
 
 subject.asObservable() // Observable<String>
@@ -913,7 +913,7 @@ subject.onError(APIError.notLoggedIn) // crash
 # Obsługa błędów
 
 ```swift
-let subject = PublishSubject<String>
+let subject = PublishSubject<String>()
 let label = UILabel(frame: .zero)
 
 subject.asObservable() // Observable<String>
