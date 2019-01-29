@@ -27,6 +27,7 @@ https://github.com/elpassion/RxSwift-workshops
 3. Moduł II - UI bindings in RxCocoa
 4. Coffee break ☕
 6. Moduł III - Reactive API calls
+7. Nasze spostrzeżenia na temat RxSwifta
 
 ####\*Każdy moduł składa się z części **teoretycznej** i **praktycznej**.
 
