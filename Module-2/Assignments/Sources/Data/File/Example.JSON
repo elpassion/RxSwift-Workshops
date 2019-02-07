@@ -6,7 +6,7 @@
         {
             "id": 1,
             "name": "IC 112",
-            "departure_time": "2019-01-26T10:00:00Z",
+            "departure_time": "2019-02-09T10:00:00Z",
             "departs_from": "Warszawa Centralna",
             "arrives_to": "Sosnowiec Główny",
             "checkins": [
@@ -17,7 +17,7 @@
         {
             "id": 2,
             "name": "TLK 14111",
-            "departure_time": "2019-01-26T13:00:00Z",
+            "departure_time": "2019-02-09T13:00:00Z",
             "departs_from": "Kraków Główny",
             "arrives_to": "Warszawa Wschodnia",
             "checkins": [
@@ -29,7 +29,7 @@
         {
             "id": 3,
             "name": "EIP 1401",
-            "departure_time": "2019-01-26T13:20:00Z",
+            "departure_time": "2019-02-09T13:20:00Z",
             "departs_from": "Toruń Główny",
             "arrives_to": "Łódź Kaliska",
             "checkins": [
@@ -39,7 +39,7 @@
         {
             "id": 4,
             "name": "TLK 14101",
-            "departure_time": "2019-01-26T13:40:00Z",
+            "departure_time": "2019-02-09T13:40:00Z",
             "departs_from": "Szczecin Zdroje",
             "arrives_to": "Bydgoszcz Błonie",
             "checkins": [
@@ -50,7 +50,7 @@
         {
             "id": 5,
             "name": "TLK 19133",
-            "departure_time": "2019-01-26T14:00:00Z",
+            "departure_time": "2019-02-09T14:00:00Z",
             "departs_from": "Sulejówek-Miłosna",
             "arrives_to": "PKP Lotnisko-Okęcie",
             "checkins": [
@@ -62,7 +62,7 @@
         {
             "id": 6,
             "name": "EIC 0880",
-            "departure_time": "2019-01-26T14:20:00Z",
+            "departure_time": "2019-02-09T14:20:00Z",
             "departs_from": "Żanęcin Główny",
             "arrives_to": "PKP Falenica",
             "checkins": [
@@ -73,7 +73,7 @@
         {
             "id": 7,
             "name": "TLK 131313",
-            "departure_time": "2019-01-26T14:40:00Z",
+            "departure_time": "2019-02-09T14:40:00Z",
             "departs_from": "Białystok Wschodni",
             "arrives_to": "PKP Suwałki",
             "checkins": [
@@ -86,7 +86,7 @@
         {
             "id": 8,
             "name": "EIC 1337",
-            "departure_time": "2019-01-26T15:00:00Z",
+            "departure_time": "2019-02-09T15:00:00Z",
             "departs_from": "Warszawa Zachodnia",
             "arrives_to": "PKP Siedlce",
             "checkins": [
@@ -97,7 +97,7 @@
         {
             "id": 9,
             "name": "EIC 8342",
-            "departure_time": "2019-01-28T09:00:00Z",
+            "departure_time": "2019-02-09T09:00:00Z",
             "departs_from": "Kołobrzeg Stadion",
             "arrives_to": "Wołomin Słoneczna",
             "checkins": [
