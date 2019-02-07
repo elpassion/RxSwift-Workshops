@@ -84,6 +84,7 @@
 		8C93112121DCF3A800CF3C99 /* UIApplication+RxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93111F21DCF36500CF3C99 /* UIApplication+RxSpec.swift */; };
 		8C93112321DCF4C200CF3C99 /* UIApplication+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93112221DCF4C200CF3C99 /* UIApplication+Rx.swift */; };
 		8C93112821DD087600CF3C99 /* UIRefreshControl+SimulateRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93112721DD087600CF3C99 /* UIRefreshControl+SimulateRefresh.swift */; };
+		8CF6B28F220C6FCF0024487B /* DateFormatter+DepartureTimeFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6B28E220C6FCF0024487B /* DateFormatter+DepartureTimeFormatterSpec.swift */; };
 		DA60C917853D3C3FBBE5D909 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA626BFD4A7DF386AD762356 /* FilterView.swift */; };
 		DA613262400A4D913472B7B5 /* UISegmentedControl+SimulateTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BB602A8C34F1996925485 /* UISegmentedControl+SimulateTap.swift */; };
 		DA61DC9B9604B79AD873A026 /* RootControllerFactoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C80B8E0466EA7E039AEF2 /* RootControllerFactoryStub.swift */; };
@@ -210,6 +211,7 @@
 		8C93112521DD07AC00CF3C99 /* TimetableViewController+PullToRefreshSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimetableViewController+PullToRefreshSpec.swift"; sourceTree = "<group>"; };
 		8C93112721DD087600CF3C99 /* UIRefreshControl+SimulateRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+SimulateRefresh.swift"; sourceTree = "<group>"; };
 		8C93112921DD0BBB00CF3C99 /* TimetableViewController+ActivityIndicatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimetableViewController+ActivityIndicatorSpec.swift"; sourceTree = "<group>"; };
+		8CF6B28E220C6FCF0024487B /* DateFormatter+DepartureTimeFormatterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+DepartureTimeFormatterSpec.swift"; sourceTree = "<group>"; };
 		DA6045BD3C04A9C8873AECA3 /* RootControllerFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootControllerFactorySpec.swift; sourceTree = "<group>"; };
 		DA60C964E52C605921D8CECD /* RootControllerFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootControllerFactoryProtocol.swift; sourceTree = "<group>"; };
 		DA626BFD4A7DF386AD762356 /* FilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
@@ -747,6 +749,7 @@
 		8C93111E21DCF33700CF3C99 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8CF6B28D220C6FB50024487B /* DateFormatter */,
 				8C93112421DCF8DF00CF3C99 /* UIApplication */,
 			);
 			path = Extensions;
@@ -758,6 +761,14 @@
 				8C93111F21DCF36500CF3C99 /* UIApplication+RxSpec.swift */,
 			);
 			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		8CF6B28D220C6FB50024487B /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				8CF6B28E220C6FCF0024487B /* DateFormatter+DepartureTimeFormatterSpec.swift */,
+			);
+			path = DateFormatter;
 			sourceTree = "<group>";
 		};
 		DA60135EF3BF09ECDC7F3AC1 /* TestInstances */ = {
@@ -954,6 +965,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF6B28F220C6FCF0024487B /* DateFormatter+DepartureTimeFormatterSpec.swift in Sources */,
 				4EB9BAD821C01A9F001BE102 /* AppDelegateStub.swift in Sources */,
 				326724FDB43C8FE79CE5B9CE /* TimetableEntryResponseSpec.swift in Sources */,
 				326723CD751DC9FD70D6FC22 /* Bundle+JSONData.swift in Sources */,
