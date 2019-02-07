@@ -27,7 +27,7 @@ class DateFormatter_DepartureTimeFormatterSpec: QuickSpec {
                     formatted = nil
                 }
 
-                it("should be formatted in polish locale") {
+                it("should be formatted in warsaw timezone") {
                     expect(formatted) == "14:54"
                 }
             }
