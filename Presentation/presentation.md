@@ -1023,7 +1023,7 @@ segmentedControl.rx.selectedSegmentIndex // ControlProperty<Int>
 * rx.items
 
 ```swift
-items.asObservable() // Observable<Element>
+items.asObservable() // Observable<[Element]>
     .bind(to: tableView.rx.items(cellIdentifier: "Identifier")) { index, element, cell in
         cell.titleLabel.text = "\(element) at \(index)"
     }
@@ -1496,14 +1496,12 @@ let surnameLabel: UILabel = ...
 let request: Observable<User> = ...
 
 request
-    .subscribe(onNext: { user in
-        nameLabel.text = user.firstName
-    })
+    .map { $0.firstName }
+    .bind(to: nameLabel.rx.text)
 
 request
-    .subscribe(onNext: { user in
-        surnameLabel.text = user.lastName
-    })
+    .map { $0.lastName }
+    .bind(to: surnameLabel.rx.text)
 ```
 
 ---
@@ -1518,14 +1516,12 @@ let request: Observable<User> = ...
 let sharedRequest = request.share(replay: 1)
 
 sharedRequest
-    .subscribe(onNext: { user in
-        nameLabel.text = user.firstName
-    })
+    .map { $0.firstName }
+    .bind(to: nameLabel.rx.text)
 
 sharedRequest
-    .subscribe(onNext: { user in
-        surnameLabel.text = user.lastName
-    })
+    .map { $0.lastName }
+    .bind(to: surnameLabel.rx.text)
 ```
 
 ^ Druga subskrypcja wywoła request tylko i wyłącznie, gdy pierwszy request zakończy się przed drugą subskrypcją.
