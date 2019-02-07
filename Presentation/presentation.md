@@ -23,11 +23,11 @@ https://github.com/elpassion/RxSwift-workshops
 # Agenda
 
 1. Moduł I - wprowadzenie do Functional Reactive Programming i RxSwifta
-2. Pizza 🍕
+2. Coffee break ☕
 3. Moduł II - UI bindings in RxCocoa
-4. Coffee break ☕
-6. Moduł III - Reactive API calls
-7. Nasze spostrzeżenia na temat RxSwifta
+4. Pizza 🍕
+5. Moduł III - Reactive API calls
+6. Nasze spostrzeżenia na temat RxSwifta
 
 ####\*Każdy moduł składa się z części **teoretycznej** i **praktycznej**.
 
