@@ -1300,6 +1300,25 @@ override func viewDidLoad() {
 
 ---
 
+# flatMap - intuicja
+
+[.code-highlight: 1-4]
+[.code-highlight: 6-9]
+
+```swift
+func map<T>(
+  _ container: Container<Element>, 
+  _ transform: (Element) -> T
+) -> Container<T>
+
+func flatMap<T>(
+  _ container: Container<Element>,
+  _ transform: (Element) -> Container<T>
+) -> Container<T>
+```
+
+---
+
 # Funkcja flatMap
 
 `flatMap`:
